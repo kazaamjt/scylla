@@ -5,11 +5,12 @@ import colorama
 
 from . import out
 
+
 @click.command()
 @click.option("-f", "--file", prompt="File with uri's", help="Path to a file containing urls.")
-@click.option("-s", "--max-simultanious", default=5, help="Maximum number of simultanious files to download.")
+@click.option("-s", "--max-concurrent", default=5, help="Maximum number of simultanious files to download.")
 @click.option("-v", "--verbose", count=True)
-def main(file: str, max: int, verbose: int) -> None:
+def main(file: str, max_concurrent: int, verbose: int) -> None:
 	colorama.init()
 	out.set_level(verbose)
 
