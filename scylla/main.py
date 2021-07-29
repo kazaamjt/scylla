@@ -5,7 +5,7 @@ from typing import List
 
 import click
 
-from.downloader import GraphicDownloader
+from .downloader import GraphicDownloader
 
 async def run(urls: List[str], output_dir: Path, max_concurrent: int) -> None:
 	start = time.time()
