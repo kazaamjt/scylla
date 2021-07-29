@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-	name="scylla",
+	name="scylla-http",
 	version="1.0.0",
 	description="The multi downloader.",
 	url='https://github.com/kazaamjt/Scylla',
