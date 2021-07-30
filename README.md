@@ -1,6 +1,6 @@
 # Scylla
 
-Scyla downloads files in parallel.  
+Scylla downloads files in parallel.  
 It is aimed at speeding up concurrent downloads, not at being as fast as possible per download.  
 There are probably a bunch of tools out there that are faster, as that is not scylas goal.  
 The reason scylla exists is because I had to repeatedly download a bunch of files and it took a while with `wget`.  
@@ -13,6 +13,14 @@ kazaamjt@workstation:~$ scylla -f url_list -o artifacts/
 ```
 
 Alternativly you can import the module from in a script.  
+
+## Installation
+
+Simply install using `pip`:
+
+```bash
+pip install scylla-http
+```
 
 ## CLI Options
 
